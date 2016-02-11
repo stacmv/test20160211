@@ -35,7 +35,7 @@
 			<h1>Калькулятор <small class="pull-right">Тестовое задание</small></h1>
 			</div>
 		
-			<form class="form-inline">
+			<form class="form-inline" method="post" action="<?=$CFG["url_base"];?>">
 				<div class="input-append">
 					<input type="text" class="span4" name="expr" id="expr" placeholder="Введите выражение">
 					<button type="submit" class="btn"><i class="icon icon-play"></i> Вычислить</button>
@@ -47,8 +47,8 @@
 				<h3>Журнал вычислений</h3>
 				<ul class="res">
 					<?if(!empty($view_data)):?>
-						<?if (!empty($view_data["dt"]) && !empty($view_data["expr"]) && !empty($view_data["res"])):?>
-								<li><small><?=$view_data["dt"];?></small>: <span><?=htmlspecialchars($view_data["expr"]);?></span> = <b><?=$view_data["res"];?></b></li>
+						<?if (!empty($view_data["dt"]) && !empty($view_data["expression"]) && !empty($view_data["res"])):?>
+								<li><small><?=$view_data["dt"];?></small>: <span><?=htmlspecialchars($view_data["expression"]);?></span> = <b><?=$view_data["res"];?></b></li>
 						<?elseif (!empty($view_data["error"])):?>
 							<li><span class='label label-important'>Ошибка: <?=$view_data["error"];?></span></li>
 						<?endif;?>

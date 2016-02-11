@@ -8,7 +8,7 @@ $app->get("/", function() use ($app, $CFG){
     $app->render("index.htm", array("CFG"=>$CFG));
 });
 
-$app->post("/", function() use ($app) {
+$app->post("/", function() use ($app, $CFG) {
         
     $expr = $app->request->post("expr");
     $jsonp_callback = (string) $app->request->get("callback");

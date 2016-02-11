@@ -6,11 +6,12 @@ Expression parsing implemented by means of PHP eval function after validation by
 
 Used Slim 2 as PHP framework, jQuery, Bootstap 2 for CSS.
 
+Main functionality works even without Javascript.
+
 
 ##Known Issues
  - Test Suite is incomplete;
- - NOJS fallback is not tested;
- - Documentation is absent;
+  - Documentation is absent;
  - HTML is rendered by PHP instead of static HTML page.
  - ...
 
@@ -20,9 +21,10 @@ Used Slim 2 as PHP framework, jQuery, Bootstap 2 for CSS.
 
 Используется микрофреймворк Slim 2, jQuery и Bootsrap 2 для CSS.
 
+При отключенном JS, основная функция - вычисление - работает.
+
 ##Известные недостатки (малая часть их)
  - Набор тестов не полный (чуть-чуть тестируется один класс);
- - Работа без JS предусмотрена, но не проверялась. Может не работать;
  - Документации нет;
  - HTML рендерится PHP (для обеспечения работы без JS, в основном) вместо использования статической страницы, как сказано в задании.
  - ...
