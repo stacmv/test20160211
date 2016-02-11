@@ -30,7 +30,7 @@ $(function(){
         }else if (data.error){
             $(".res-container ul.res").prepend("<li><span class='label label-important'>Ошибка: " + data.error + "</span></li>");
         }else{
-            $(".res-container ul.res").apreend("<li><span class='label label-important'>Ошибка: обратитесь в техподдержку.</li>");
+            $(".res-container ul.res").prepend("<li><span class='label label-important'>Ошибка: обратитесь в техподдержку.</li>");
         }
     };
     

@@ -16,7 +16,7 @@ $app->post("/", function() use ($app) {
     $data = array();
     
     if ($expr){
-        $calc = new \Stacmv\El_test\EvaLCalculator();
+        $calc = new \Stacmv\El_test\EvalCalculator();
         $data = $calc->calculate($expr);
         
     }else{
