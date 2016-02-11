@@ -25,7 +25,7 @@ class EvalCalculator implements CalculatorInterface
 
         }else{
             
-            $error = "Недопустимое выражение: &quot;" . $expression . "&quot;";  //  кодируем кавычку ", т.к. строка будет json_encode.
+            $error = "Недопустимое выражение: &quot;" . htmlspecialchars($expression) . "&quot;";  //  кодируем кавычку ", т.к. строка будет json_encode.
             
         }
                         
